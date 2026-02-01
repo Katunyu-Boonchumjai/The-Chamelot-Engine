@@ -67,4 +67,3 @@ If you wish to use the **OpenRTP Engine** for commercial purposes, production-gr
 - **LinkedIn:** [Katunyu Boonchumjai](https://www.linkedin.com/in/katunyu-boonchumjai-12ba6334b/)
 - **GitHub:** [Katunyu-Boonchumjai](https://github.com/Katunyu-Boonchumjai)
 
-**Happy Testing!** 🎰🚀
