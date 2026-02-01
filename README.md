@@ -26,6 +26,23 @@ The engine is verified for extreme volatility. Below is a **10,000 Spin Chaos St
 ```bash
 pip install -r requirements.txt
 ```
+## Algorithm Flow
+
+```mermaid
+graph TD
+    A["<b>Definitions / Variables</b><br/>P_i = Probability, V_i = Symbol Value<br/>Bet_i = Bet Amount, Payout_i = Payout<br/>H = House Edge (Constant)"] --> B
+    B["<b>RTP (Return to Player)</b><br/>RTP_target = Σ (P_i * V_i)"] --> C
+    C["<b>House Edge</b><br/>H = 1 - RTP_target"] --> D
+    D["<b>Turnover</b><br/>T_n = Σ Bet_i"] --> E
+    E["<b>Target Profit</b><br/>Target(n) = H * T_n"] --> F
+    F["<b>Actual Profit</b><br/>P_n = Σ (Bet_i - Payout_i)"] --> G
+    G["<b>Error (%)</b><br/>e(n) = [(P_n - Target(n)) / T_n] * 100"] --> H
+    H["<b>PID Brain</b><br/>Enter PID -> Compute Signal (u)"] --> I
+    I["<b>Asymmetric Clamping</b><br/>u_clamped = max(-0.9, min(2.0, u))"] --> J
+    J["<b>Weight Update</b><br/>weight_new = weight_old * (1 + u_clamped)"] --> K
+    K["<b>Update Weights</b><br/>Apply weight_new to Reel Ecosystem"]
+```
+
 
 ### 📜 License
 
