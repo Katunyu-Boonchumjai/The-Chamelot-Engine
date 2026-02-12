@@ -74,6 +74,7 @@ python3 demo.py
 
 ![Snyk Vulnerability scanner badge](https://snyk.io/test/github/Katunyu-Boonchumjai/The-Chamelot-Engine/badge.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Katunyu-Boonchumjai_The-Chamelot-Engine&metric=alert_status)](https://sonarcloud.io/dashboard?id=Katunyu-Boonchumjai_The-Chamelot-Engine)
+[![Python build check](https://github.com/Katunyu-Boonchumjai/The-Chamelot-Engine/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Katunyu-Boonchumjai/The-Chamelot-Engine/actions/workflows/main.yml)
 
 ## ⚖️ Legal Disclaimer
 
